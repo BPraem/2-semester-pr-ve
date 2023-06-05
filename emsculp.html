@@ -1,0 +1,103 @@
+<!—Lavet af David -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Body Coach</title>
+    <link rel="stylesheet"  href="CSS/emsculp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="darkmodebutton">
+            <input onclick="changeImage()" type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle"></label>
+        </div>
+        <div>
+            <a class="image-logo" href="Forside.html"><img id="myImage" src="Images/logoUBC.png" alt="logo-nav"></a>
+            <a href="akut.html">Akutbehandling</a>
+            <a href="Tran.html">Træning</a>
+            <a href="Kost.html">Kostvejleder</a>
+            <a href="Well.html">Wellness</a>
+            <a href="Behan.html">Behandling</a>
+            <a href="Omus.html">Om os</a>
+        </div>
+        <input type="text" placeholder="Søg...">
+    </nav> 
+    <header>
+        <img src="Images/IMG-0596-scaled.jpg.jpeg" alt="header-img">
+    </header>
+    <h2>EM Scuplting</h2>
+    <section class="section-intro">
+        <h4>Hvad er EM Scuplting</h4>
+        <p>EM Sculpting er en effektiv og hurtig behandling, som hjælper til at opnå en mere tonet og markeret krop. Selve behandlingen virker ved, at man påsætter et pulsgivende håndtag på det ønskede behandlingsområde, hvorefter der generes et elektromagnetisk felt (deraf navnet EM Sculpting), der stimulerer musklerne og fremkalder tusindvis af sammentrækninger på kort tid.Behandlingen varer 30 minutter og musklerne vil gennemgå over 20.000 sammentrækninger på denne tid. Det svarer til at kroppen laver 20.000 mavebøjninger eller 20.000 squats, alt efter hvilken kropsdel der bliver behandlet.</p>
+        <p>EM Scuplting aktiverer på denne måde mange flere muskelfibre, end det er muligt ved en normal træningssession.</p>
+        <p>Behandlingen er klinisk dokumenteret og er især populær i USA, hvor maskinen gjorde sit indtog i 2019. Studier viser, at man ved et behandlingsforløb kan forvente en øget muskelmasse på 15% og en fedtreduktion på 19%.</p>
+        <p>Behandlingen er godkendt af FDA i USA og af Sundhedsstyrelser verden over. Alt efter behandling påsættes 1 til 4 håndtag. Der skrues langsomt op for energien til det niveau, som du kan holde ud. Behandlingen gør ikke ondt, men kan mærkes.</p>
+        <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+    </section>
+    <section class="section-info">
+        <article>
+            <h4>HVAD ER FORSKELLEN PÅ EM SCULPTING OG FEDTFRYSNING?</h4>
+            <p>Den største forskel på behandlingerne er, at EM Sculpting primært toner kroppens muskulatur, mens fedtfrysning reducerer fedtdepoter.</p>
+            <p>EM Sculpting styrker musklerne, forbedrer kroppens fedtforbrænding og giver kredsløbet et boost. Resultatet af behandlingen vil opleves individuelt, da udgangspunktet er forskelligt fra person til person.</p>
+            <p>En aktiv og veltrænet person vil opleve mere definerede muskler. Er der fedtdepoter på kroppen vil man opleve en reduktion af disse. Hvis det ønskede behandlingsområde har et fedtdepot på over 7 cm, anbefaler vi et behandlingsforløb med fedtfrysning først, for at opnå den mest optimale effekt af EM Sculpting.</p>
+        </article>
+        <img src="Images/IMG_3558.jpg" alt="emsculpting">
+    </section>
+    <section class="section-priser">
+        <h4>Priser</h4>
+        <div>
+            <p>EM SCULPTING ( X-TRAINER ) MED 1-2 PÅSÆTNING..</p>
+            <p>700 kr</p>
+        </div>
+        <div>
+            <p>EM SCULPTING ( X-TRAINER ) MED 3-4 PÅSÆTNING</p>
+            <p>850 kr</p>
+        </div>
+        <div>
+            <p>EM SCULPTING KLIPPEKORT 5 KLIP..</p>
+            <p>3500 kr</p>
+        </div>
+        <div>
+            <p>EM SCULPTING KLIPPEKORT 10 KLIP..</p>
+            <p>6500 kr</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-kontact">
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </div>
+        <div class="footer-brand">
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ultimate_body_coach/?fbclid=IwAR3vM4fBjJGD88r6df6mfzUlLHOw4K0JbWbS34WHeKwFLO5bL360J5UajmA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UltimateBodyCoach/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    function changeDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+  </script>
+      <script>
+        function changeImage() {
+            changeDarkmode();
+            
+            var imageElement = document.getElementById('myImage');
+            var src = imageElement.getAttribute("src");
+            if (src === "Images/logoUBC blå.png") {
+                imageElement.src = "Images/logoUBC.png";
+            }
+            else {
+                imageElement.src = "Images/logoUBC blå.png";
+            }
+        }
+    </script>
+</html>
+<!—Lavet af David -->
