@@ -1,0 +1,81 @@
+<!—Lavet af David -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Body Coach</title>
+    <link rel="stylesheet"  href="CSS/kost.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="darkmodebutton">
+            <input onclick="changeImage()" type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle"></label>
+        </div>
+        <div>
+            <a class="image-logo" href="Forside.html"><img id="myImage" src="Images/logoUBC.png" alt="logo-nav"></a>
+            <a href="akut.html">Akutbehandling</a>
+            <a href="Tran.html">Træning</a>
+            <a href="Kost.html">Kostvejleder</a>
+            <a href="Well.html">Wellness</a>
+            <a href="Behan.html">Behandling</a>
+            <a href="Omus.html">Om os</a>
+        </div>
+        <input type="text" placeholder="Søg...">
+    </nav> 
+    <header>
+        <img src="Images/jingxi-lau-bKW7yf6dJUA-unsplash.jpg" alt="header-img">
+    </header>
+    <h1>Kostvejleder</h1>
+    <section class="section-body">
+        <article>
+            <h4>Står du og mangler en kostvejleder</h4>
+            <p>Syntes du at det er svært at finde ud af alt det med kosten, tælle kalorier, finde ud af hvor mange kalorier du skal indtage og hvad så når man dyrker sport og hvad er PAL værdi? Hvor mange kulhydrater skal man indtage eller skal jeg helt undvære dem, fedt procent, får jeg nok protein, køber dig fattig i alt verdens produkter?</p>
+            <p>Måske du allerede har prøvet en hel masse kure, nupo, keto og al verdens andre kure der findes. Og det lykkes aldrig helt at komme i mål eller holde den.</p>
+            <p>Alle disse problemstillinger har jeg hjulpet flere af med en nem tilgang til kost, og sunde vaneændringer. Intet er nemlig forbudt, forkert eller rigtigt, men det handler om at spise med sund fornuft.Så fordi du vælger en kostvejleder er det ikke ens betydning med at du ikke kan spise et måltid med familien eller skal sidde hver aften og spise kylling og ris.</p>
+            <p>Jeg kan nemlig lave planer der kan spise af hele familien, selv den travle familie, kan overskue den nye livstilsændring, uden om de lette valg.</p>
+        </article>
+        <div>
+            <img src="Images/nadine-primeau-Juvw-a-RvvI-unsplash.jpg" alt="akut-billede">
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+    </section>
+    <h1>Priser - Er individuelt men ring og hør hvad de skal koste for dig</h1>
+    <footer>
+        <div class="footer-kontact">
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </div>
+        <div class="footer-brand">
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ultimate_body_coach/?fbclid=IwAR3vM4fBjJGD88r6df6mfzUlLHOw4K0JbWbS34WHeKwFLO5bL360J5UajmA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UltimateBodyCoach/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    function changeDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+  </script>
+      <script>
+        function changeImage() {
+            changeDarkmode();
+            
+            var imageElement = document.getElementById('myImage');
+            var src = imageElement.getAttribute("src");
+            if (src === "Images/logoUBC blå.png") {
+                imageElement.src = "Images/logoUBC.png";
+            }
+            else {
+                imageElement.src = "Images/logoUBC blå.png";
+            }
+        }
+    </script>
+</html>
+<!—Lavet af David -->

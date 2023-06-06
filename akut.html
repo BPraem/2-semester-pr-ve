@@ -1,0 +1,78 @@
+<!—Lavet af David -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Body Coach</title>
+    <link rel="stylesheet"  href="CSS/akut.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="darkmodebutton">
+            <input onclick="changeImage()" type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle"></label>
+        </div>
+        <div>
+            <a class="image-logo" href="Forside.html"><img id="myImage" src="Images/logoUBC.png" alt="logo-nav"></a>
+            <a href="akut.html">Akutbehandling</a>
+            <a href="Tran.html">Træning</a>
+            <a href="Kost.html">Kostvejleder</a>
+            <a href="Well.html">Wellness</a>
+            <a href="Behan.html">Behandling</a>
+            <a href="Omus.html">Om os</a>
+        </div>
+        <input type="text" placeholder="Søg...">
+    </nav>
+    <h1>Akutbehandling</h1>
+    <section class="section-body">
+        <article>
+            <h4>Har du akut brug for hjælp</h4>
+            <p>Står du og har akut brug for hjælp til en skade, og er der ingen behandler at få fat i før i morgen, så der hjælp og hente.</p>
+            <p>Vi tilbyder akut skadesbehandling. Så har du fået et hold i ryggen, en låst nakke eller anden skade, så kan du kontakte os på Tlf. + 45 5356 6643 og få en akut tid. Der skal forventes at der ligges der 25 % oven i behandlingspris, ved behandling uden for vores åbnings tid.</p>
+            <h6>Mandag-Fredag kl. 07.00-19.00</h6>
+            <h6>Lørdag kl.09.00-17.00</h6>
+            <h6>Søndag Lukket</h6>
+        </article>
+        <div>
+            <img src="Images/close-up-man-rubbing-his-painful-back-isolated-white-background-scaled.jpg.jpeg" alt="akut-billede">
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-kontact">
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </div>
+        <div class="footer-brand">
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ultimate_body_coach/?fbclid=IwAR3vM4fBjJGD88r6df6mfzUlLHOw4K0JbWbS34WHeKwFLO5bL360J5UajmA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UltimateBodyCoach/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    function changeDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+  </script>
+      <script>
+        function changeImage() {
+            changeDarkmode();
+            
+            var imageElement = document.getElementById('myImage');
+            var src = imageElement.getAttribute("src");
+            if (src === "Images/logoUBC blå.png") {
+                imageElement.src = "Images/logoUBC.png";
+            }
+            else {
+                imageElement.src = "Images/logoUBC blå.png";
+            }
+        }
+    </script>
+</html>
+<!—Lavet af David -->
