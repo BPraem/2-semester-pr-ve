@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Body Coach</title>
+    <link rel="stylesheet"  href="CSS/behan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <a class="image-logo" href="Forside.html"><img src="Images/logoUBC.png" alt="logo-nav"></a>
+            <a href="akut.html">Akutbehandling</a>
+            <a>Træning</a>
+            <a href="Kost.html">Kostvejleder</a>
+            <a>Wellness</a>
+            <a href="Omus.html">Om os</a>
+        </div>
+        <input type="text" placeholder="Søg...">
+    </nav> 
+    <header>
+        <img src="Images/annie-spratt-Nt5eeIKH-1s-unsplash.jpg" alt="header-img">
+    </header>
+    <h1>Behandling</h1>
+    <section class="section-grid">
+        <div>
+            <h4>Wellness Massage</h4>
+            <img src="Images/bruce-mars-HHXdPG_eTIQ-unsplash.jpg" alt="Sport Terapi">
+            <p>Ultimate body coach tilbyder 2 forskellige former af massage: wellness massage og fysiurgisk massage. Wellness massage er en blidere form for massage med fokus på en dejlig oplevelse. fysiurgisk massage har fokus på at behandle og lindre muskelspændinger, smerter og ubehag i kroppen.</p>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+        <div>
+            <h4>Indfrarød Saunatæppe</h4>
+            <img src="Images/bruce-mars-HHXdPG_eTIQ-unsplash.jpg" alt="Sport Terapi">
+            <p>Ultimate Body Coach kan nu tilbyde vores kunder det fantastiske infrarød sauna tæppe. Den infrarøde påvirkning giver ny energi til cellerne i kroppen. </p>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-kontact">
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </div>
+        <div class="footer-brand">
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ultimate_body_coach/?fbclid=IwAR3vM4fBjJGD88r6df6mfzUlLHOw4K0JbWbS34WHeKwFLO5bL360J5UajmA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UltimateBodyCoach/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+</body>

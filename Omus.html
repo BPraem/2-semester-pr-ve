@@ -1,0 +1,112 @@
+<!—Lavet af David -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Body Coach</title>
+    <link rel="stylesheet"  href="CSS/Omus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="darkmodebutton">
+            <input onclick="changeImage()" type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle"></label>
+        </div>
+        <div>
+            <a class="image-logo" href="Forside.html"><img id="myImage" src="Images/logoUBC.png" alt="logo-nav"></a>
+            <a href="akut.html">Akutbehandling</a>
+            <a href="Tran.html">Træning</a>
+            <a href="Kost.html">Kostvejleder</a>
+            <a href="Well.html">Wellness</a>
+            <a href="Behan.html">Behandling</a>
+            <a href="Omus.html">Om os</a>
+        </div>
+        <input type="text" placeholder="Søg...">
+    </nav> 
+    <header>
+        <img src="Images/LogoUBC blå.png" alt="header-logo">
+    </header>
+    <section class="section-fokus">
+        <h4>Fokus, Tryghed og Faglighed</h4>
+        <div>
+            <img src="Images/Skærmbillede 2023-05-21 kl. 19.11.07.png">
+            <img src="Images/Skærmbillede 2023-05-21 kl. 19.11.19.png">
+            <img src="Images/Skærmbillede 2023-05-21 kl. 19.11.28.png">
+        </div>
+        <p>Hos Ultimate Body Coach er vores klienter altid i fokus. Det er vigtigt for os, at vores klienter føler sig velkomne og trygge, så snart de træder ind ad døren. Vi tror på, at tryghed og nærvær skaber den bedste relation og et optimalt udgangspunkt for et succesfuldt behandlingsforløb.</p>
+        <p>Vi lægger ligeledes stor vægt på både faglighed og udvikling af vores team. Dette skal sikre dig et højt fagligt niveau, uanset hvilken problematik du har, eller hvilken behandler du er tilknyttet.</p>
+        <p>Alle vores behandlere og masseur er trænet i at udføre den bedst muligt behandling for alle vores kunder.</p>
+        <p>Håber vi kan levere til alle jeres forventninger.</p>
+    </section>
+    <section class="section-Gitte">
+        <h4>Mød Gitte</h4>
+        <div>
+            <article>
+                <p>Født : 5 Juni 1989</p>
+                <p>Mit navn er Gitte Stolling og jeg står bag firmaet Ultimate Body Coach.</p>
+                <p>I Januar 2023 åbnede jeg min egen klinik på Køgevej 18, 4700 Næstved. Dog har jeg behandlet siden 2020 ved siden af min undervisning og mit “rigtige” arbejde.</p>
+                <p>Lidt omkring mig: Jeg er uddannet personlig træner, kostvejleder, løbecoach og Fysiurgisk Massør og Sportsbehandler. Jeg har ligeledes undervist på At work i 2 år som helse- og sportsmassør, og har nydt min tid, som underviser.</p>
+                <p>Aktiv sport har altid været en del af mig og jeg har dyrket flere former for sport heriblandt gymnastik, ridning, og fodbold er nogle af dem jeg vil nævne.</p>
+                <p>Men ridning har helt klart været en favorit, men også kommet en del skader heraf.</p>
+                <p>Jeg er mor til 2 drenge og som andre mødre ved så ændre en krop sig typisk og det samme gjorde min.</p>
+            </article>
+            <img src="Images/unnamed-1-scaled-q30vnvp43jqenqtig1n9xwdk9w5vzxbo6h59cutnxs.jpeg" alt="Gitte">
+        </div>
+    </section>
+    <section class="Kontact-section">
+        <article>
+            <h2>Kontakt Os</h2>
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </article>
+        <div>
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                Navn:<br>
+                <input type="text" name="name"><br>
+                E-mail:<br>
+                <input type="text" name="mail"><br>
+                Kommentarer:<br>
+                <input type="text" name="comment" class="text-input" size="50"><br><br>
+                <input class="send-button" type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-kontact">
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </div>
+        <div class="footer-brand">
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ultimate_body_coach/?fbclid=IwAR3vM4fBjJGD88r6df6mfzUlLHOw4K0JbWbS34WHeKwFLO5bL360J5UajmA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UltimateBodyCoach/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    function changeDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+  </script>
+      <script>
+        function changeImage() {
+            changeDarkmode();
+            
+            var imageElement = document.getElementById('myImage');
+            var src = imageElement.getAttribute("src");
+            if (src === "Images/logoUBCble.png") {
+                imageElement.src = "Images/logoUBC.png";
+            }
+            else {
+                imageElement.src = "Images/logoUBCble.png";
+            }
+        }
+    </script>
+</html>
+<!—Lavet af David -->

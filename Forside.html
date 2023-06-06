@@ -1,0 +1,112 @@
+<!—Lavet af David -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Body Coach</title>
+    <link rel="stylesheet"  href="CSS/Forside.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="darkmodebutton">
+            <input onclick="changeImage()" type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle"></label>
+        </div>
+        <div>
+            <a class="image-logo" href="Forside.html"><img id="myImage" src="Images/logoUBC.png" alt="logo-nav"></a>
+            <a href="akut.html">Akutbehandling</a>
+            <a href="Tran.html">Træning</a>
+            <a href="Kost.html">Kostvejleder</a>
+            <a href="Well.html">Wellness</a>
+            <a href="Behan.html">Behandling</a>
+            <a href="Omus.html">Om os</a>
+        </div>
+        <input type="text" placeholder="Søg...">
+    </nav>
+    <header>
+        <video height="600px" width="100%" autoplay muted loop>
+            <source src="Video/UBC.mp4" type="video/mp4">
+        </video>
+        <img src="Images/logoUBC.png" alt="Logo">
+    </header>
+    <section class="velkommen-section">
+        <h2>Velkommen til Ultimate Body Coach</h2>
+        <p>Hos Ultimate Body Coach arbejder vi med personlig træning, behandlingsforløb for smerteramte klienter og kostvejledning til folk der ønsker et varigt vægttab.</p> 
+        <p>Vi har en helhedsorienteret tilgang i alle vores behandlinger.</p>
+        <p>Det betyder, at vi altid individualiserer trænings- og behandlingsforløb, så de er tilpasset dig, dine behov og dine mål.</p>
+        <p>Vi tager altid udgangspunkt i, hvor du er i forløbet, men også hvordan forløbet passer ind i din dagligdag og i dit familie- og arbejdsliv.</p>
+        <p>Urealistiske krav og quick-fixes er ikke en del af vores filosofi – så derfor sammensætter vi alle vores forløb individuelt, så du bliver klædt bedst på til at opnå dine personlige mål.</p>
+        <p>Vi er altid opdateret på den nyeste viden indenfor både fysioterapi, træning og kost, så vi altid kan tilbyde dig de bedste trænings- og behandlingsforløb.</p>
+    </section>
+    <section class="Åbningstider-section">
+        <h2>Åbningstider</h2>
+        <div>
+            <article>
+                <h4>Mandag 7:00 - 19:00</h4>
+                <h4>Tirsdag 7:00 - 19:00</h4>
+                <h4>Onsdag 7:00 - 19:00</h4>
+                <h4>Torsdag 7:00 - 19:00</h4>
+                <h4>Fredag 7:00 - 19:00</h4>
+                <h4>Lørdag 9:00 - 17:00</h4>
+                <h4>Søndag og Helligedage: Lukket</h4>
+            </article>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1323.5094938470825!2d11.76538327429182!3d55.24879454079489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652bf800632ce7f%3A0xb05e2991a0aabe26!2sUltimate%20Body%20Coach!5e1!3m2!1sen!2sdk!4v1685311769177!5m2!1sen!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="Kontact-section">
+        <article>
+            <h2>Kontakt Os</h2>
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </article>
+        <div>
+            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                Navn:<br>
+                <input type="text" name="name"><br>
+                E-mail:<br>
+                <input type="text" name="mail"><br>
+                Kommentarer:<br>
+                <input type="text" name="comment" class="text-input" size="50"><br><br>
+                <input class="send-button" type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-kontact">
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </div>
+        <div class="footer-brand">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ultimate_body_coach/?fbclid=IwAR3vM4fBjJGD88r6df6mfzUlLHOw4K0JbWbS34WHeKwFLO5bL360J5UajmA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UltimateBodyCoach/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    function changeDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+  </script>
+      <script>
+        function changeImage() {
+            changeDarkmode();
+            
+            var imageElement = document.getElementById('myImage');
+            var src = imageElement.getAttribute("src");
+            if (src === "Images/logoUBCble.png") {
+                imageElement.src = "Images/logoUBC.png";
+            }
+            else {
+                imageElement.src = "Images/logoUBCble.png";
+            }
+        }
+    </script>
+</html>
+<!—Lavet af David -->

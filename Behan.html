@@ -1,0 +1,111 @@
+<!—Lavet af David -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Body Coach</title>
+    <link rel="stylesheet"  href="CSS/behan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="darkmodebutton">
+            <input onclick="changeImage()" type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle"></label>
+        </div>
+        <div>
+            <a class="image-logo" href="Forside.html"><img id="myImage" src="Images/logoUBC.png" alt="logo-nav"></a>
+            <a href="akut.html">Akutbehandling</a>
+            <a href="Tran.html">Træning</a>
+            <a href="Kost.html">Kostvejleder</a>
+            <a href="Well.html">Wellness</a>
+            <a href="Behan.html">Behandling</a>
+            <a href="Omus.html">Om os</a>
+        </div>
+        <input type="text" placeholder="Søg...">
+    </nav> 
+    <header>
+        <img src="Images/tennis-player-with-bandaged-knee-1903585.jpg" alt="header-img">
+    </header>
+    <h1>Behandling</h1>
+    <section class="section-grid">
+        <div>
+            <h4>Sport Terapi</h4>
+            <img src="Images/bruce-mars-HHXdPG_eTIQ-unsplash.jpg" alt="Sport Terapi">
+            <p>En sports terapibehandling trækker på en bred vifte af teknikker fra dybdegående massage, akkupressur, triggerpunkter, akupunktur, TENS som kombineret er særdeles effektive. Dvs en kombinationsbehandling.</p>
+            <a class="a-button" href="sportteapi.html">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+        <div>
+            <h4>Fedt Frysning</h4>
+            <img src="Images/IMG_3558.jpg" alt="Sport Terapi">
+            <p>Fedtfrysning, også kaldet kryolipolyse, er det man betegner som en non-invasiv behandling. Det betyder, at der ikke foretages indgreb med brud på huden.</p>
+            <a class="a-button" href="fedt.html">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+        <div>
+            <h4>EM Scupting</h4>
+            <img src="Images/IMG-0596-scaled.jpg.jpeg" alt="Sport Terapi">
+            <p>EM Sculpting er en effektiv og hurtig behandling, som hjælper til at opnå en mere tonet og markeret krop.</p>
+            <a class="a-button" href="emsculp.html">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+        <div>
+            <h4>YourBoots</h4>
+            <img src="Images/img_8571.jpeg" alt="Sport Terapi">
+            <p>Yourboots er beregnet til restitutions- og muskelbehandling af atleter og fysisk aktive. Luftkompression er udviklet til behandling af bl.a. lymfødemer, apopleksi og hemiparese på hospitalerne. Som så meget andet, tog sportens verden teknologien til sig, i kampen om at opnå bedre restitution.</p>
+            <a class="a-button" href="yourboots.html">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+        <div>
+            <h4>Cupping</h4>
+            <img src="Images/katherine-hanlon-Pdea8oxLHkU-unsplash.jpg" alt="Sport Terapi">
+            <p>Cupping-terapi også kaldet cupping-behandling, sugekop-behandling, sugekop-massage, bindevævsmassage, cupping-massage eller bare kopmassage.</p>
+            <a class="a-button" href="cupping.html">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+        <div>
+            <h4>Skadesbehandling</h4>
+            <img src="Images/Skærmbillede 2023-05-22 kl. 12.51.25.png" alt="Sport Terapi">
+            <p>Hos Ultimate Body Coach – Har vi fokus på at sammensætte et behandlingsforløb der er skræddersyet til dig. Dette gør vi ved at tage afsæt i din problematik og hvordan det påvirker dig og dit liv.</p>
+            <a class="a-button" href="skadebe.html">Læs Mere</a>
+            <a class="a-button" target="_blank" href="https://ultimate-body-coach.planway.com/">Book Online</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-kontact">
+            <a href="mailto:info@ultimate-body-coach.dk">Info@Ulitmate-Body-Coach</a>
+            <a href="teleto:53566643">Telefon: 53 56 66 43</a>
+            <p>CVR: 42 89 91 51</p>
+        </div>
+        <div class="footer-brand">
+            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/ultimate_body_coach/?fbclid=IwAR3vM4fBjJGD88r6df6mfzUlLHOw4K0JbWbS34WHeKwFLO5bL360J5UajmA" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UltimateBodyCoach/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+    </footer>
+</body>
+<script>
+    function changeDarkmode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+  </script>
+      <script>
+        function changeImage() {
+            changeDarkmode();
+            
+            var imageElement = document.getElementById('myImage');
+            var src = imageElement.getAttribute("src");
+            if (src === "Images/logoUBCble.png") {
+                imageElement.src = "Images/logoUBC.png";
+            }
+            else {
+                imageElement.src = "Images/logoUBCble.png";
+            }
+        }
+    </script>
+</html>
+<!—Lavet af David -->
